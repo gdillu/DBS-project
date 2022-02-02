@@ -1,6 +1,7 @@
 # DBS-project
 The Home expense Management system
 It is Just a simple Prototype for Engineering 2nd year Stuents How the  Frontend And Backend Works.This Project is Done as a Part of Assigment
+***************This is a just a prototype to understand,Not a final version***************
 Process to be done:
 ## Install xampp latest version,and install mysql connector zip package from your browser
 CREATE TABLE Login(
