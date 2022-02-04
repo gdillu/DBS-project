@@ -41,3 +41,14 @@ These are the create tables for sql n phpmyadmin copy this and u are allset to g
 
 
 ********This is not the final version ************
+
+# Queries used
+"INSERT INTO login(user_name,password,income,Currency) VALUES(?,?,?,?)"
+"SELECT login_id,expense_id,dateq,Item_name,Amt,Notes FROM expense WHERE expense_id="+id;
+"Update expense set login_id=?,categoty_id=?,Item_name=?,dateq=?,Amt=?,Notes=? where expense_id=id
+DELETE FROM expense WHERE expense_id="+id
+"SELECT c.cate_name,SUM(e.Amt) FROM category c,expense e WHERE e.login_id="+userid+" AND c.category_id=e.categoty_id GROUP BY e.categoty_id";
+query="SELECT l.user_name,c.c_name,l.income FROM login l,Currency c WHERE login_id="+userid+" AND c.c_id=l.Currency";
+query2="SELECT e.dateq,c.cate_name,e.Item_name,e.Amt,e.expense_id FROM expense e,category c,login l WHERE e.login_id=l.login_id AND c.category_id=e.categoty_id AND l.login_id="+userid;
+query3="SELECT SUM(e.Amt) FROM expense e,login l WHERE e.login_id=l.login_id AND e.login_id="+userid;
+SELECT login_id FROM login WHERE user_name=\""+user+"\" AND password=\""+pass+"\""
