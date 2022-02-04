@@ -21,7 +21,7 @@ CREATE TABLE Category(
   cate_id INT(20) AUTO INCREMENT,
   cate_name VARCHAR(50) UNIQUE,
   );
-
+********This is not the final version **************
 CREATE TABLE Expense(
   Expense_id INT(20) PRIMARY KEY AUTO INCREMENT,
   dateq DATE,
