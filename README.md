@@ -21,7 +21,6 @@ CREATE TABLE Category(
   cate_id INT(20) AUTO INCREMENT,
   cate_name VARCHAR(50) UNIQUE,
   );
-********This is not the final version **************
 CREATE TABLE Expense(
   Expense_id INT(20) PRIMARY KEY AUTO INCREMENT,
   dateq DATE,
@@ -34,3 +33,4 @@ CREATE TABLE Expense(
   FOREIGN KEY login_id REFERENCES Login(login_id) ON DELETE CASCADE ON UPDATE CASCADE);
   
 These are the create tables for sql n phpmyadmin copy this and u are allset to go
+********This is not the final version **************
